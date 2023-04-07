@@ -9,16 +9,29 @@
 </header>
 <!--<div id="bannerimage"></div>-->
 <%= image_tag("martins-zemlickis-NPFu4GfFZ7E-unsplash.jpg", alt: "people running", id: "bg") %>
-<h1>Run for Shoes Run for Life</h1>
+<h1>Run for Shoes <br> Run for Life</h1>
+<h2>See our upcoming events</h2>
+ <%= link_to "Events", '#', class: "btn btn-lg btn-primary" %>
 
+ <table>
+   <tr>
+     <td>
+       <h1 id="blue">Our mission</h1>
+      </td>
 
+     <td rowspan="2"> <%= image_tag("pexels-norma-mortenson-8457630.jpg", alt: "people running", width: "90%", align: "right") %></td>
+   </tr>
+   <tr>
+     <td>
+        <p>
+            We want to supply shoes for kids. For every mile, a person runs
+            we donate one pair of shoes to a child in need of shoes. We
+            believe that every child should have a pair of shoes to wear.
+            We not only provide children with shoes, we also provide them
+            with the Truth. Each place we go we share the Gospel with the
+            children we meet.
+          </p>
+     </td>
+   </tr>
+ </table>
 
-<h2>Our Mission</h2>
-  <p>
-    We want to supply shoes for kids. For every mile, a person runs
-    we donate one pair of shoes to a child in need of shoes. We
-    believe that every child should have a pair of shoes to wear.
-    We not only provide children with shoes, we also provide them
-    with the Truth. Each place we go we share the Gospel with the
-    children we meet.
-  </p>
