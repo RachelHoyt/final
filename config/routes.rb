@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "/registration", to: "static_pages#registration"
   get "/login", to: "static_pages#log_in"
   get "/signup", to: "users#new"
+  get "/more_events", to: "static_pages#more_events"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
