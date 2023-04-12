@@ -1,6 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+/* colors */
+$dark-blue: #173BA6;
+$medium-blue: #1755A6;
+$light-blue: #1E91D9;
+$teal: #4ED9D9;
+$yellow: #F2D64B;
+$error-red: #FF0000;
+$grey: #D9D9D9;
+
 /* universal */
 
 body {
@@ -28,16 +38,16 @@ textarea {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+  border-top: 1px solid $light-blue;
+  color: $dark-blue;
 }
 
 footer a {
-  color: #555;
+  color: $dark-blue;
 }
 
 footer a:hover {
-  color: #222;
+  color: $medium-blue;
 }
 
 footer small {
@@ -122,6 +132,9 @@ margin: -2em 0em -20em 0em;
   padding: 1em;
 }
 
-
+/*contact page*/
+.contact {
+  text-align: right;
+}
 
 
