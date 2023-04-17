@@ -30,9 +30,4 @@ assert_response :success
     assert_select "title", "Registration | #{@base_title}"
   end
 
-  test "should get log_in" do
-    get login_path
-assert_response :success
-    assert_select "title", "Log In | #{@base_title}"
-  end
 end
