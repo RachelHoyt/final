@@ -1,7 +1,4 @@
 module SessionsHelper
-<<<<<<< HEAD
-end
-=======
 
   # Logs in the given user.
   def log_in(user)
@@ -26,4 +23,3 @@ end
     @current_user = nil
   end
 end
->>>>>>> sign-up

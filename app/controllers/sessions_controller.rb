@@ -3,21 +3,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-<<<<<<< HEAD
-    #user = User.find_by(email: params[:session][:email].downcase)
-  #if user && user.authenticate(params[:session][:password])
-      #Log the user in and redirect to the user's show page.
-  #else
-   #   flash.now[:danger] = 'Invalid email/password combination'
-  #  render 'new', status: :unprocessable_entity
- # end
-  end
-
-  def destroy
-  end
-end
-
-=======
     user = User.find_by(email: params[:session][:email].downcase)
     if user # && user.authenticate(params[:session][:password])
       reset_session
@@ -34,4 +19,3 @@ end
     redirect_to root_url, status: :see_other
   end
 end
->>>>>>> sign-up
