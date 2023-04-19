@@ -11,9 +11,7 @@ class StaticPagesController < ApplicationController
   def registration
   end
 
-  def log_in
-  end
-
   def more_events
   end
+
 end
