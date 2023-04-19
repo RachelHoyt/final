@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "/signup", to: "users#new"
   get "/more_events", to: "static_pages#more_events"
   resources :users
+  resources :account_activations, only: [:edit]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
