@@ -22,8 +22,4 @@ module SessionsHelper
     reset_session
     @current_user = nil
   end
-<<<<<<< HEAD
 end
-=======
-end
->>>>>>> basic-login
