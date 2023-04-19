@@ -29,5 +29,9 @@ assert_response :success
 assert_response :success
     assert_select "title", "Registration | #{@base_title}"
   end
+<<<<<<< HEAD
 
 end
+=======
+end
+>>>>>>> basic-login

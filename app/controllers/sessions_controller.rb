@@ -1,11 +1,20 @@
 class SessionsController < ApplicationController
+<<<<<<< HEAD
+=======
+
+>>>>>>> basic-login
   def new
   end
 
   def create
     user = User.find_by(email: params[:session][:email].downcase)
+<<<<<<< HEAD
     if user # && user.authenticate(params[:session][:password])
       reset_session
+=======
+    if user && user.authenticate(params[:session][:password])
+     reset_session
+>>>>>>> basic-login
       log_in user
       redirect_to user
     else
