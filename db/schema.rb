@@ -10,24 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema[7.0].define(version: 2023_04_18_231846) do
-=======
-ActiveRecord::Schema[7.0].define(version: 2023_04_19_002513) do
->>>>>>> 5c00b55e3bac7bacbae874aae30177662e83a3bc
+ActiveRecord::Schema[7.0].define(version: 2023_04_19_224705) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
-<<<<<<< HEAD
     t.string "activation_digest"
     t.boolean "activated", default: false
     t.datetime "activated_at"
-=======
     t.boolean "admin"
->>>>>>> 5c00b55e3bac7bacbae874aae30177662e83a3bc
+    t.string "age"
+    t.string "phone"
+    t.string "team"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
