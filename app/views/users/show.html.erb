@@ -20,9 +20,9 @@
 
  <h3>Team Members</h3>
  <div id= "team members">
-     <%=teamlist = User.select {|x| x.team == @user.team}=%>
+     <%teamlist = User.select {|x| x.team == @user.team}=%>
      <table>
-        <%= teamlist.each do |m| %>
+        <%teamlist.each do |m| %>
         <tr>
             <td><%=m.name%></td>
         </tr>
@@ -34,11 +34,16 @@
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
-      <h1>
-        <%= @user.team %>
-        <%= @user.name %>
-        <%= @user.age %>
         
+      <h1>
+          <table>
+              <tr>
+                <td><%= @user.team%></td>
+                <td><%= @user.name%></td>
+                <td><%= @user.age%></td>
+                <td><%= @user.phone%></td>
+            </tr>
+        </table>
       </h1>
     </section>
   </aside
