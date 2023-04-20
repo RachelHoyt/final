@@ -265,3 +265,11 @@ input {
     border-bottom: 1px solid $gray-lighter;
   }
 }
+
+.table-style {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px;
+}
