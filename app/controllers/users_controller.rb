@@ -7,18 +7,8 @@ class UsersController < ApplicationController
  end
 
  def show
-  @user = User.find(params[:id])
+   @user = User.find(params[:id])
  end
- 
-def make_admin
-    User.find(params[:id]).toggle!(:admin)
-    redirect_to users_url, status: :see_other
-end
-
-  def admin_user
-    redirect_to(root_url, status: :see_other) unless current_user.admin?
-  end
-
 
   def new
     @user = User.new

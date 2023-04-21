@@ -21,7 +21,7 @@
           <li><%= link_to "Contact", contact_path %></li>
           <li><%= link_to "Registration", "../signup" %></li>
          <% if logged_in? %>
-       
+
           <li class="dropdown">
             <a href="#" id="account" class="dropdown-toggle">
               Account <b class="caret"></b>
@@ -32,7 +32,6 @@
              <%end%>
               </li>
               <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", 'edit_user_path(current_user)' %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to "Log out", logout_path,

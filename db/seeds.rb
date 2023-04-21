@@ -23,9 +23,9 @@ User.create!(name:  "Admin",
                team: team,
                password:              password,
                password_confirmation: password)
-end   
-               
-               
-               
-               
-               
+end
+
+
+
+
+
