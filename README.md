@@ -1,15 +1,8 @@
-# Ruby on Rails Tutorial sample application
 
-This is the sample application for the
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](https://www.railstutorial.org/)
-by [Michael Hartl](https://www.michaelhartl.com/).
+# Welcome to the Soles for Souls website! 
 
-## License
+To see the full race map and race details, please register for a race or login if you have already registered. 
 
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
 
 ## Getting started
 
@@ -38,6 +31,6 @@ If the test suite passes, you'll be ready to run the app in a local server:
 ```
 $ rails server
 ```
-
-For more information, see the
-[*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
+To access the admin features, please run “rails db:seed” in your command line before logging in. After the command has successfully run, login as:
+	Email: admin@example.org
+	Password: foobar
